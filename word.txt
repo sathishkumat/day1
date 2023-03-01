@@ -1,0 +1,27 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+HTTP1:
+    Developed by Timothy Berners-Lee in 1989 as a communication standard for the World Wide Web
+    HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server. 
+    In this process, a client sends a text-based request to a server by calling a method like GET or POST
+    In response, the server sends a resource like an HTML page back to the client.
+    For example,
+    GET /index.html HTTP/1.1
+Host: www.example.com
+    This request uses the GET method, which asks for data from the host server listed after Host:
+    In response to this request, the example.com web server returns an HTML page to the requesting client, in addition to any images, stylesheets, or other resources called for in the HTML. 
+HTTP/2:
+    HTTP/2 began as the SPDY protocol, developed primarily at Google with the intention of reducing web page load latency by using techniques such as compression, multiplexing, and prioritization.
+    HTTP/2 uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers.
+    This ensures that web applications created before HTTP/2 can continue functioning as normal when interacting with the new protocol.
+    In HTTP/2, the binary framing layer encodes requests/responses and cuts them up into smaller packets of information, greatly increasing the flexibility of data transfer.
+    Let’s take a closer look at how this works. As opposed to HTTP/1.1, which must make use of multiple TCP connections to lessen the effect of HOL blocking, HTTP/2 establishes a single connection object between the two machines.
+2 Write a blog about objects and its internal representation in Javascript
+
+A JavaScript object is a collection of named values having state and behavior (properties and method)”
+For example: Person, car, pen, bike, Personal Computer , Washing Machine etc. Take the case of cars. All cars have the same properties, but the property values differ from car to car.
+objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+Creating a JavaScript Object
+Create a single object, using an object literal.
+Create a single object, with the keyword new .
+Define an object constructor, and then create objects of the constructed type.
+Create an object using Object.create() .
